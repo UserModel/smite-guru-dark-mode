@@ -1,0 +1,14 @@
+{
+	"name": "Smite Guru - Dark Mode",
+	"action": {},
+	"manifest_version": 3,
+	"version": "0.1",
+	"description": "Adds a dark mode switch to Smite.guru, because sometimes, it's just too bright",
+	"permissions": ["activeTab", "scripting"],
+	"content_scripts": [
+		{
+			"matches": ["https://smite.guru/*"],
+			"js": ["content-script.js"]
+		}
+	]
+}
